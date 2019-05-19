@@ -1,0 +1,78 @@
+.orange {
+  color: orange;
+}
+
+.grey {
+  transition: .5s all;
+  background: rgb(75, 75, 75);
+}
+
+.card {
+  padding: 0px;
+}
+
+.card:hover .grey {
+  background: white;
+}
+
+.card:hover .white {
+  color: rgb(75, 75, 75);
+}
+
+.card:hover .white-orange {
+  color: rgb(236, 98, 98);
+}
+
+.white {
+  color: white;
+}
+
+.white-orange {
+  color: white;
+}
+
+.btn {
+  background: orange;
+}
+
+h4 {
+  text-overflow: ellipsis;
+}
+
+/* Spinner */
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: orange;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}

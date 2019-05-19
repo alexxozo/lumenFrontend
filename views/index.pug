@@ -1,0 +1,30 @@
+extends layout.pug
+
+block main
+  .container
+    .row.mt-4
+      select#inputGroupSelect02.custom-select.col-lg-3.offset-lg-9
+        option(selected='') Filter by
+        option(value='1') Price
+        option(value='2') New
+        option(value='3') Hot
+    .row.mt-4(id="productsList")
+      each product in products
+        .card.mb-2.mt-2.col-lg-3
+          .grey
+            h5.text-center.white.mb-2.mt-2 #{product.name}
+          img.card-img-top(src=`${product.image}`, alt='Card image')
+          .grey
+            h5.text-center.white-orange.mb-2.mt-2 $#{product.price}
+    .row.mt-4
+      button.col-lg-6.offset-lg-3.btn(type="button", id="loadmore") 
+        span(style="font-weight:900;color:white;") LOAD MORE
+    .row.justify-content-center(id="loader")
+      .lds-facebook
+        div
+        div
+        div
+
+
+
+
