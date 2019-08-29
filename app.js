@@ -39,3 +39,5 @@ app.use((err, req, res, next) => {
 
 // Run server
 app.listen(port, () => console.log('Starting the server on port: ' + port));
+
+// ACEASTA LINIE ESTE ADAUGATA
